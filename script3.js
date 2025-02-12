@@ -10,7 +10,7 @@ const main = function () {
 
   const currentParams = new URLSearchParams(window.location.search);
   if (startParam && currentParams.get('utm_medium') !== startParam) {
-    window.location.search = `utm_medium=${startParam}`;
+    window.location.search = `utm_source=roman_bot&utm_medium=${startParam}`;
     console.log('.1');
   }
 }
